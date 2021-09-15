@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import Link from "next/link";
 import { Component } from '../components/component';
+import { Layout } from '../components/Layout';
 
 export default function Home() {
   return (
-    <div className="mb-96">
+    <Layout>
       < Head >
-        <title>Create Next App</title>
+        <title>Tailwind css</title>
         <link rel="icon" href="/favicon.ico" />
       </Head >
-
       <div>
         <ul className="mt-20 ml-4">
           <li>
@@ -142,6 +142,6 @@ export default function Home() {
       <button className="btn2">btn</button>
 
 
-    </div >
+    </Layout>
   )
 }

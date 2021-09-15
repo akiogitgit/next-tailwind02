@@ -1,11 +1,12 @@
 import Link from "next/dist/client/link";
+import { Layout } from "../components/Layout";
 
 export default function Transform() {
     return (
-        <div>
+        <Layout>
             <Link href="/">home
             </Link>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3">
                 <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:translate-y-96">
                     translate-y-96
@@ -39,6 +40,6 @@ export default function Transform() {
                     scale-y-0
                 </div>
             </div>
-        </div>
+        </Layout>
     )
 }
