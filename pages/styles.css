@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+
+// 普通のcssはこの@tailwind baseとかの中に書く
+// @apply　の右には、tailwindの書き方をする　改行するたびに@applyをつける
+// 先頭につけないときは通常のcssを書くmixさせるのもおけ
+// @applyで疑似要素は使えない　hoverとか
+// あと コメントアウト途中で使うとバグる
+
+.btn-blue {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.hero {
+    @apply py-2 bg-green-500 text-white font-bold px-4 rounded;
+    @apply md:bg-blue-500 md:border-black md:border-b-8 md:border-t-4;
+}
+
+.hero:hover{
+    color:black;
+    background:white;
+    transition:300ms;
+}
+.title {
+    @apply text-5xl text-center;
+    color: #ddd;
+    line-height: 1.15;
+}
+
+.title:hover{
+    color:black;
+    background:pink;
+    transition:500ms;
+}
+
+.btn2 {
+    @apply bg-red-300 py-3 px-5 ml-2 rounded-md;
+}
+
+.btn2:hover{
+    @apply transition-all opacity-80 bg-blue-300 text-xl;
+}
+
+.btn2:active{
+    @apply text-white;
+}
+
+@tailwind utilities;
