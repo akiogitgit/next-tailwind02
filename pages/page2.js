@@ -41,7 +41,7 @@ export default function Page2() {
                     onClick={() => setChange2(!change2)}>
                     <GiHamburgerMenu />
                 </div>
-                <div className={`${change2 ? "pl-6 py-2 border-t" : "hidden"} col-span-12  md:col-span-1 md:block md:mt-6 text-gray-300
+                <div className={`${change2 ? "pl-6 py-2 border-t z-10" : "hidden"} col-span-12  md:col-span-1 md:block md:mt-6 text-gray-300
                 hover:text-white hover:cursor-pointer hover:transition`}>
                     menu1
                 </div>

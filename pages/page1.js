@@ -27,8 +27,8 @@ export default function Page1() {
                         </div>
                         <div className="text-center w-[80%] md:w-[300px] ml-[10%]">
                             <div className="text-2xl">目次</div>
-                            <div className="text-left py-6 pl-10 border-4 rounded-xl border-yellow-400
-                            bg-yellow-100">
+                            <div className="text-left py-6 pl-10 border-4 rounded-xl border-red-300
+                            bg-red-100">
                                 <a href="#one" className="text-xl border-b-2 border-red-300">1.padding margin</a><br /><br />
                                 <a href="#two" className="text-xl border-b-2 border-red-300">2.width height</a><br /><br />
                                 <a href="#three" className="text-xl border-b-2 border-red-300">3.color</a><br /><br />
@@ -52,7 +52,7 @@ export default function Page1() {
                                 <div>p は paddingであり、　p 単体は、上下左右に対応し、pt は上  pb は下  pl は左　pr は右 にそれぞれ対応しています。</div>
                                 <div className="overflow-x-auto">
                                     {["pl-0", "pl-0.5", "pl-1", "pl-1.5", "pl-2", "pl-2.5", "pl-3", "pl-3.5", "pl-4", "pl-5", "pl-6", "pl-8", "pl-10", "pl-12", "pl-16", "pl-20", "pl-24", "pl-28", "pl-32", "pl-36", "pl-40", "pl-44", "pl-48", "pl-52", "pl-56", "pl-64", "pl-72", "pl-80", "pl-96"].map((key) => (
-                                        <><div key={key} className={`${key} inline-block bg-gray-100`}>{key} </div><br /></>
+                                        <><div key={key} className={`${key} inline-block bg-red-50`}>{key} </div><br /></>
                                     ))}</div>
                                 <div className="mt-10">
                                     ここでは pl を書きましたが、p pt pb prすべて同様に書くことが出来ます。
@@ -66,7 +66,7 @@ export default function Page1() {
                                 <div>m　は marginであり、 m単体は 上下左右、mt は上　mb は下 ml は左 mr は右に　それぞれ対応しています。</div>
                                 <div className="overflow-x-auto">
                                     {["ml-0", "ml-0.5", "ml-1", "ml-1.5", "ml-2", "ml-2.5", "ml-3", "ml-3.5", "ml-4", "ml-5", "ml-6", "ml-8", "ml-10", "ml-12", "ml-16", "ml-20", "ml-24", "ml-28", "ml-32", "ml-36", "ml-40", "ml-44", "ml-48", "ml-52", "ml-56", "ml-64", "ml-72", "ml-80", "ml-96"].map((key) => (
-                                        <><div key={key} className={`${key} inline-block bg-gray-100`}>{key}</div><br /></>
+                                        <><div key={key} className={`${key} inline-block bg-red-50`}>{key}</div><br /></>
                                     ))}
                                 </div>
                                 <div className="mt-10">
@@ -83,20 +83,16 @@ export default function Page1() {
                             <div className="leading-10 text-xl ml-10">
                                 <div>w=横幅　h=高さ</div>
                                 {["w-full", "w-11/12", "w-5/6", "w-4/5", "w-3/4", "w-2/3", "w-1/2", "w-1/3", "w-1/4", "w-1/5", "w-1/6", "w-1/12"].map((key) => (
-                                    <div key={key} className={`${key} bg-gray-100`}>{key}</div>
+                                    <div key={key} className={`${key} bg-red-50`}>{key}</div>
                                 ))}<br /><br />
 
                                 <div className="overflow-x-auto">
                                     {["w-96", "w-80", "w-72", "w-64", "w-56", "w-52", "w-48", "w-44", "w-40", "w-36", "w-32", "w-28", "w-24", "w-20", "w-16", "w-12", "w-11", "w-10", "w-8", "w-6", "w-5", "w-4", "w-3.5", "w-3", "w-2.5", "w-2", "w-1.5", "w-1", "w-0.5", "w-0"].map((key) => (
-                                        <div key={key} className={`${key} bg-gray-100`}>{key}</div>
+                                        <div key={key} className={`${key} bg-red-50`}>{key}</div>
                                     ))}</div><br /><br />
 
-                                {/* {["h-full", "h-11/12", "h-5/6", "h-4/5", "h-3/4", "h-2/3", "h-1/2", "h-1/3", "h-1/4", "h-1/5", "h-1/6", "h-1/12"].map((key) => (
-                                <div key={key} className={`${key} bg-gray-100`}>{key}</div>
-                            ))}<br /><br /> */}
-
                                 {["h-96", "h-80", "h-72", "h-64", "h-56", "h-52", "h-48", "h-44", "h-40", "h-36", "h-32", "h-28", "h-24", "h-20", "h-16", "h-12", "h-11", "h-10", "h-8", "h-6", "h-5", "h-4", "h-3.5", "h-3", "h-2.5", "h-2", "h-1.5", "h-1", "h-0.5", "h-0"].map((key) => (
-                                    <div key={key} className={`${key} border border-gray-300 bg-gray-100`}>{key}</div>
+                                    <div key={key} className={`${key} border border-red-300 bg-red-50`}>{key}</div>
                                 ))}
                             </div>
                         </div>
@@ -199,24 +195,24 @@ export default function Page1() {
                                 <div className="my-10">
                                     まず、className="flex"と書きます。そうすることで、flexと書いた要素の子要素が横並びになります。
                                 </div>
-                                <div className="flex bg-yellow-100">
+                                <div className="flex bg-red-50">
                                     <p>flex 1</p><p>flex 2</p><p>flex 3</p><p>flex 4</p><p>flex 5</p><p>flex 6</p>
                                 </div>
                                 <div className="my-10">また、逆順も flex-row-reverse　と書くことで出来ます</div>
-                                <div className="flex flex-row-reverse bg-yellow-100">
+                                <div className="flex flex-row-reverse bg-red-50">
                                     <p>flex 1</p><p>flex 2</p><p>flex 3</p><p>flex 4</p><p>flex 5</p><p>flex 6</p>
                                 </div>
                                 <div className="my-10">しかし、このままだと折り返さず横に伸び続けます。折り返すには flex に flex-wrap を加えます className="flex flex-wrap"</div>
-                                <div className="flex flex-wrap grid grid-cols-4 bg-yellow-100">
+                                <div className="flex flex-wrap grid grid-cols-4 bg-red-50">
                                     <p>flex-wrap 1</p><p>flex-wrap 2</p><p>flex-wrap 3</p><p>flex-wrap 4</p><p>flex-wrap 5</p><p>flex-wrap 6</p>
                                 </div>
 
                                 <div className="my-10">縦に表示させるには　flex-col</div>
-                                <div className="flex flex-col bg-yellow-100">
+                                <div className="flex flex-col bg-red-50">
                                     <div>flex-col 1</div><div>flex-col 2</div><div>flex-col 3</div>
                                 </div>
                                 <div className="my-10">その逆順は　flex-col-reverse</div>
-                                <div className="flex flex-col-reverse bg-yellow-100">
+                                <div className="flex flex-col-reverse bg-red-50">
                                     <div>flex-col 1</div><div>flex-col 2</div><div>flex-col 3</div>
                                 </div>
                             </div>
@@ -351,7 +347,7 @@ export default function Page1() {
                             <div className="text-4xl my-10">shadow</div>
                             <div className="grid grid-cols-3">
                                 {["shadow-xs", "shadow-sm", "shadow", "shadow-md", "shadow-lg", "shadow-xl", "shadow-2xl", "shadow-inner", "shadow-outline", "drop-shadow-sm", "drop-shadow", "drop-shadow-md", "drop-shadow-lg", "drop-shadow-xl", "drop-shadow-2xl"].map((key) => (
-                                    <div className={`${key} mr-5 mb-8 text-gray-700 bg-pink-100`}>{key}</div>
+                                    <div className={`${key} mr-5 mb-8 text-gray-700 bg-red-50`}>{key}</div>
                                 ))}
                             </div>
                         </div>
@@ -375,10 +371,10 @@ export default function Page1() {
                                     なので、 relative　＜　static　＜　absoluteの順で上に表示されます。</div>
                                 <div className="text-4xl my-10">static</div>
                                 <div className="mb-10">static　はrelativeの上に表示され、absoluteより下に表示されます。</div>
-                                <div className="relative bg-yellow-300 w-full sm:w-96 h-96 pl-[160px]">
+                                <div className="relative bg-red-200 w-full sm:w-96 h-96 pl-[160px]">
                                     relative
-                                    <div className="static pl-2 sm:px-20 h-64 bg-pink-300 shadow-lg">
-                                        <div className="absolute top-36 left-16 pl-24 w-[70%] sm:w-64 h-48 bg-pink-500 shadow-xl">absolute</div>
+                                    <div className="static pl-2 sm:px-20 h-64 bg-red-300 shadow-lg">
+                                        <div className="absolute top-36 left-16 pl-24 w-[70%] sm:w-64 h-48 bg-red-500 shadow-xl">absolute</div>
                                         static
                                     </div>
                                 </div>
