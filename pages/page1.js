@@ -284,7 +284,7 @@ export default function Page1() {
                                 <div className="text-4xl mb-20">text-center right left</div>
                                 <div className="leading-10 mb-10">これらの記法は下記の通り text-left と書くと左寄りになり、 text-center で中央寄せ、　text-right で右寄りになります。</div>
                                 <div className="text-left bg-pink-50">text-left</div>
-                                <div className="text-cente bg-pink-50">text-center</div>
+                                <div className="text-center bg-pink-50">text-center</div>
                                 <div className="text-right bg-pink-50">text-right</div>
                                 <div className="leading-10 my-10">下記のように、長文を書くとわかりやすいです。</div>
                                 <div className="text-left my-20 bg-pink-50">
@@ -358,11 +358,11 @@ export default function Page1() {
                             </div>
                             <div className="text-xl leading-10">
                                 <div className="text-4xl my-10">fixed</div>
-                                <a href="#top" className="fixed top-[93%] left-[48%] z-10
+                                <a href="#top" className="fixed top-[90%] left-[48%] z-10
                             bg-pink-200 py-1 px-3 rounded-xl cursor-pointer">Top</a>
                                 <div>fixed は画面から動かない。このページでは下にある Top が fixedを使っています。
                                     記述方法は、  className="fixed top-0 left-0"  でまず表示することが出来ます。<br />
-                                    ここでの Top では、className="fixed top-[93%] left-[48%]"と記載しています。
+                                    ここでの Top では、className="fixed top-[90%] left-[48%]"と記載しています。
                                 </div>
                                 <div className="text-4xl my-10">relative</div>
                                 <div>relative　はそのクラスで囲った要素の位置を固定するのに使います。</div>

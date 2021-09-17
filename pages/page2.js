@@ -1,13 +1,15 @@
 import Link from "next/dist/client/link"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { Layout } from "../components/Layout";
 
 export default function Page2() {
 
     const [change, setChange] = useState(false);
     const [change2, setChange2] = useState(false);
+    const [slide, setSlide] = useState(false);
     return (
-        <div>
+        <Layout><div>
             <div id="top" className="bg-gray-500 text-white grid grid-cols-12">
                 <div className="text-4xl font-bold col-span-10 md:col-span-3 ml-4 pt-3 pb-5">
                     <Link href="/">home</Link>
@@ -57,7 +59,7 @@ export default function Page2() {
                 hover:bg-gray-300 hover:text-black hover:transition hover:cursor-pointer">Login</div>
             </div>
 
-
         </div>
+        </Layout>
     )
 }
