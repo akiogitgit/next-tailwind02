@@ -307,8 +307,8 @@ export default function Page1() {
                                     <div className="text-4xl mb-10">float</div>
                                     <div className="mb-16">float　を使うと半強制的に、囲った要素を移動させることが出来ます。</div>
                                     <div>
-                                        <div className="float-left bg-yellow-100 py-1 px-3">float-left</div>
-                                        <div className="float-right bg-yellow-100 py-1 px-3">float-right</div>
+                                        <div className="float-left bg-pink-50 py-1 px-3">float-left</div>
+                                        <div className="float-right bg-pink-50 py-1 px-3">float-right</div>
                                     </div>
                                 </div>
                             </div>

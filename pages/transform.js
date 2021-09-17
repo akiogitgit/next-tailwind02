@@ -6,38 +6,36 @@ export default function Transform() {
     const [slide, setSlide] = useState(false);
     return (
         <Layout>
-            <Link href="/">home
-            </Link>
             <div className="grid grid-cols-2 sm:grid-cols-3">
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:translate-y-96">
                     translate-y-96
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:translate-x-96">
                     translate-x-96
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-150">
                     scale-150
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-0">
                     scale-0
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-x-150">
                     scale-x-150
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-x-0">
                     scale-x-0
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-y-150">
                     scale-y-150
                 </div>
-                <div className="text-xl ml-[30%] p-20 border-2 inline-block border-red-400
+                <div className="text-xl ml-[10%] md:ml-[30%] p-20 border-2 inline-block border-red-400
                 hover:duration-1000 hover:scale-y-0">
                     scale-y-0
                 </div>
@@ -61,12 +59,12 @@ export default function Transform() {
                 <Link href="/">invisible?</Link></div>
 
 
-            <div className={`${slide ? "opacity-0 duration-300" : "opacity-100 duration-300"}`}>
+            <div className={`${slide ? "opacity-100 duration-300" : "opacity-0 duration-300"}`}>
                 <Link href="/lesson101">
                     クリックできる
                 </Link>
             </div>
-            <div className={`${slide ? "opacity-0 duration-300 pointer-events-none" : "opacity-100 duration-300"} text-xl`}>
+            <div className={`${slide ? "opacity-100 duration-300" : "opacity-0 duration-300 pointer-events-none"} text-xl`}>
                 <Link href="/lesson101">
                     クリックできない
                 </Link>
@@ -90,7 +88,7 @@ export default function Transform() {
             {/*checkboxは、全部.cssで書かないとできない */}
             <div class="menu">
                 <label for="menu_bar01">アコーディオン１</label>
-                <input type="checkbox" id="menu_bar01" />
+                <input className="hidden" type="checkbox" id="menu_bar01" />
                 <ul id="links01">
                     <li><a href="">Link01</a></li>
                     <li><a href="">Link02</a></li>
@@ -98,7 +96,7 @@ export default function Transform() {
                     <li><a href="">Link04</a></li>
                 </ul>
                 <label for="menu_bar02">アコーディオン２</label>
-                <input type="checkbox" id="menu_bar02" />
+                <input className="hidden" type="checkbox" id="menu_bar02" />
                 <ul id="links02">
                     <li><a href="">Link01</a></li>
                     <li><a href="">Link02</a></li>
@@ -107,12 +105,12 @@ export default function Transform() {
                 </ul>
             </div>
 
-            <input id="ac-check1" class="ac-check mt-16" type="checkbox" />
+            <input id="ac-check1" class="ac-check hidden mt-16" type="checkbox" />
             <label class="ac-label" for="ac-check1">アコーディオン1</label>
             <div class="ac-content">
                 <p>内容が入ります。</p>
             </div>
-            <input id="ac-check2" class="ac-check" type="checkbox" />
+            <input id="ac-check2" class="ac-check hidden" type="checkbox" />
             <label class="ac-label" for="ac-check2">アコーディオン2</label>
             <div class="ac-content">
                 <p>内容が入ります。</p>
