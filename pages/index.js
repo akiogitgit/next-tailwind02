@@ -21,6 +21,9 @@ export default function Home() {
           <li>
             <Link href="/transform">・transform</Link>
           </li>
+          <li>
+            <Link href="/CAR">・CAR</Link>
+          </li>
         </ul>
 
         <div className="bg-gray-400 text-yellow-100 py-8 shodow-xl">

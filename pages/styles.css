@@ -212,4 +212,25 @@ label {
     @apply text-white;
 }
 
+
+
+.change-minus .plus-1{
+    transform: rotate(180deg);
+}
+.change-minus .plus-2{
+    animation: kf-plus-2 1s;
+    animation-fill-mode:
+}
+
+@keyframes kf-plus-2{
+    0%{
+        transform:rotate(0);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:translateY(-2px) rotate(360deg);
+    }
+}
 @tailwind utilities;

@@ -41,6 +41,13 @@ export const Header = () => {
                     page3
                 </div></Link>
 
+            <Link href="/CAR">
+                <div className={`${change ? "visible opacity-100 pl-6 py-2 border-t duration-500" : "duration-500 opacity-0 h-0 invisible"}
+            col-span-12 md:col-span-1 md:block md:mt-6 md:border-none md:visible md:opacity-100 text-red-100 hover:bg-red-400 md:hover:bg-opacity-0
+                hover:text-black md:hover:text-white hover:cursor-pointer hover:duration-300 md:hover:-translate-y-1`}>
+                    page4
+                </div></Link>
+
             <div className={`${change ? "visible opacity-100 pl-6 py-2 border-t duration-500" : "duration-500 opacity-0 h-0 invisible"}
             col-span-12 md:col-span-1 md:col-end-11 md:opacity-100 md:visible md:h-auto md:bg-red-400 md:py-6 md:pl-4 lg:w-0 lg:pr-14
                 hover:bg-red-300 hover:text-black hover:duration-300 hover:cursor-pointer`}
